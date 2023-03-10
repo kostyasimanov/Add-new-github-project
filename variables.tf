@@ -1,5 +1,11 @@
 variable "gitlab_token" {
-  description = "Auth Token"
+  description = "Auth GitLab Token"
+  type        = string
+  sensitive   = true
+}
+
+variable "github_token" {
+  description = "Auth GitHub Token"
   type        = string
   sensitive   = true
 }

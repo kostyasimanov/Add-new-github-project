@@ -8,6 +8,12 @@ resource "gitlab_project" "add_gitlab_project" {
   path                   = "add-gitlab-project"
 }
 
+resource "github_repository" "add_github_repo" {
+  name         = "add-new-github-project"
+  description  = "Project to add new repo at github"
+  auto_init    = true
+}
+
 resource "gitlab_deploy_key" "personal_gitlab_key" {
   project  = gitlab_project.add_gitlab_project.id
   title    = "Personal Deploy Key"
