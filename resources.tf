@@ -23,15 +23,15 @@ resource "gitlab_project" "do-vps-aws-dns" {
 # GitHub repos
 
 resource "github_repository" "add_github_repo" {
-  name         = "add-new-github-project"
-  description  = "Project to add new repo at github"
-  auto_init    = true
+  name        = "add-new-github-project"
+  description = "Project to add new repo at github"
+  auto_init   = true
 }
 
 resource "github_repository" "do-vps-aws-dns" {
-  name         = "do-vps-aws-dns"
-  description  = "Add DigitalOcean VPS + AWS Route53 DNS"
-  auto_init    = true
+  name        = "do-vps-aws-dns"
+  description = "Add DigitalOcean VPS + AWS Route53 DNS"
+  auto_init   = true
 }
 
 
