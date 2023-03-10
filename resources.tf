@@ -16,7 +16,7 @@ resource "gitlab_project" "do-vps-aws-dns" {
   description            = "Add DigitalOcean VPS + AWS Route53 DNS"
   default_branch         = "main"
   initialize_with_readme = true
-  path                   = "dp-vps-aws-dns"
+  path                   = "do-vps-aws-dns"
 }
 
 
