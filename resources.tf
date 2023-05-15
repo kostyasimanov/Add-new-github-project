@@ -19,6 +19,14 @@ resource "gitlab_project" "do-vps-aws-dns" {
   path                   = "do-vps-aws-dns"
 }
 
+resource "gitlab_project" "alphacamp_blog_app" {
+  name                   = "Alphacamp Blog App"
+  description            = "Demo project ruby on rails"
+  default_branch         = "main"
+  initialize_with_readme = true
+  path                   = "alphacamp_blog_app"
+}
+
 
 # GitHub repos
 
