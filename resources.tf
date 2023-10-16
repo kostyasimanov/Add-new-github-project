@@ -42,6 +42,12 @@ resource "github_repository" "do-vps-aws-dns" {
   auto_init   = true
 }
 
+resource "github_repository" "napa-labs" {
+  name        = "Napa_Labs"
+  description = "Test task for Napa Labs"
+  auto_init   = false
+}
+
 
 # Deploy Key
 
